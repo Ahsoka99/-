@@ -1,0 +1,899 @@
+body {
+  background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
+            -webkit-linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px,
+            -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px,
+            -webkit-linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px,
+            -webkit-linear-gradient(0deg, #1b1b1b 10px, transparent 10px),
+            -webkit-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background: -moz-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
+            -moz-linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px,
+            -moz-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px,
+            -moz-linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px,
+            -moz-linear-gradient(0deg, #1b1b1b 10px, transparent 10px),
+            -moz-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-size: 20px 20px;
+  background-color: #131313;
+  font-family: 'Times New Roman';
+  margin: 0;
+  align-items: center;
+  height: 100vh;
+}
+body h1 {
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+/*background: linear-gradient(90deg, red, blue);*/
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0px;
+}
+.centering {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.slide h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 25px;
+  margin: 0;
+  opacity: 0;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.slide h3:hover {
+  cursor: default;
+}
+.active1 {
+  flex: 10;
+  cursor: default;
+}
+.active2 {
+  flex: 10;
+  cursor: default;
+}
+.active3 {
+  flex: 10;
+  cursor: default;
+}
+.active4 {
+  flex: 10;
+  cursor: default;
+}
+.active1 h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.active2 h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.active3 h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.active4 h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.trigger {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger1 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger1:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger2 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger2:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger3 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger3:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger4 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger4:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger5 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger5:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger6 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger6:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger7 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger7:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger8 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger8:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger9 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger9:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger10 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger10:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger11 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger11:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger12 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger12:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger13 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger13:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger14 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger14:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger15 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger15:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger16 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger16:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger17 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger17:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger18 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger18:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.trigger19 {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.trigger19:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  background-color: rgb(169, 169, 169);
+}
+.content {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content[aria-hidden="true"] {
+  max-height: 0;
+}
+.content[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content1 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content1[aria-hidden="true"] {
+  max-height: 0;
+}
+.content1[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content2 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content2[aria-hidden="true"] {
+  max-height: 0;
+}
+.content2[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content3 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content3[aria-hidden="true"] {
+  max-height: 0;
+}
+.content3[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content4 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content4[aria-hidden="true"] {
+  max-height: 0;
+}
+.content4[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content5 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content5[aria-hidden="true"] {
+  max-height: 0;
+}
+.content5[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content6 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content6[aria-hidden="true"] {
+  max-height: 0;
+}
+.content6[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content7 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content7[aria-hidden="true"] {
+  max-height: 0;
+}
+.content7[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content8 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content8[aria-hidden="true"] {
+  max-height: 0;
+}
+.content8[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content9 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content9[aria-hidden="true"] {
+  max-height: 0;
+}
+.content9[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content10 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content10[aria-hidden="true"] {
+  max-height: 0;
+}
+.content10[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content11 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content11[aria-hidden="true"] {
+  max-height: 0;
+}
+.content11[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content12 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content12[aria-hidden="true"] {
+  max-height: 0;
+}
+.content12[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content13 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content13[aria-hidden="true"] {
+  max-height: 0;
+}
+.content13[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content14 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content14[aria-hidden="true"] {
+  max-height: 0;
+}
+.content14[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content15 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content15[aria-hidden="true"] {
+  max-height: 0;
+}
+.content15[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content16 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content16[aria-hidden="true"] {
+  max-height: 0;
+}
+.content16[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content17 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content17[aria-hidden="true"] {
+  max-height: 0;
+}
+.content17[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content18 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content18[aria-hidden="true"] {
+  max-height: 0;
+}
+.content18[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.content19 {
+  padding-left: 290px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  line-height: 35px;
+}
+.content19[aria-hidden="true"] {
+  max-height: 0;
+}
+.content19[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+.centering1 {
+  margin-left: 40px;
+}
+.centering2 {
+  margin-left: 101px;
+}
+.description2 {
+  padding-right: 12px;
+}
+.all {
+  border-radius: 15px;
+  transition-duration: 0.6s;
+  padding-bottom: 5px;
+  padding-left: 12px;
+
+  letter-spacing: normal;
+}
+.all:hover {
+  background-color: rgb(169, 169, 169);
+  transition-duration: 0.4s;
+  transition-property: background-color;
+}
+.all1 {
+  padding-left: 12px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.all2 {
+  padding-right: 6px;
+}
+.Porsсhe718Cayman1 {
+  margin-left: -4px;
+}
+.Porsсhe718CaymanGTS401 {
+  margin-left: 94px;
+}
+.Porsсhe718CaymanGT41 {
+  margin-left: 50px;
+}
+.Porsсhe718Boxster1 {
+  margin-left: -12px;
+}
+.Porsсhe718BoxsterGTS401 {
+  margin-left: 87px;
+}
+.Porsсhe911Carrera1 {
+  margin-left: -11px;
+}
+.Porsсhe911Carrera4S1 {
+  margin-left: 24px;
+}
+.Porsсhe911CarreraGTS1 {
+  margin-left: 47px;
+}
+.Porsсhe911Targa41 {
+  margin-left: -16px;
+}
+.Porsсhe911GT31 {
+  margin-left: -52px;
+}
+.PorsсhePanamera4S1 {
+  margin-left: 2px;
+}
+.PorsсhePanamera4E-Hybrid1 {
+  margin-left: 101px;
+}
+.PorsсhePanamera4SE-Hybrid1 {
+  margin-left: 116px;
+}
+.PorsсhePanamera4Executive1 {
+  margin-left: 103px;
+}
+.PorsсhePanameraGTSSportTurismo1 {
+  margin-left: 195px;
+}
+.PorsсheTaycan1 {
+  margin-left: -69px;
+}
+.PorsсheTaycanSportTurismo1 {
+  margin-left: 100px;
+}
+.PorsсheTaycan4S1 {
+  margin-left: -33px;
+}
+.PorsсheTaycanT1 {
+  margin-left: -44px;
+}
+.PorsсheTaycanGTS1 {
+  margin-left: -12px;
+}
+.footer1 {
+  margin-left: 40px;
+  color: white;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+.footer2 {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.footer2:hover {
+  cursor: pointer;
+  background: black;
+  color: rgba(245, 245, 245, 0.842);
+}
+
+
+.Porsсhe718Cayman {
+  background-image: url(DSC_0025-1_BM.jpg);
+}
+.Porsсhe718CaymanGTS40 {
+  background-image: url(porsm129.jpg);
+}
+.Porsсhe718CaymanGT4 {
+  background-image: url(2020-Porsche-718-Cayman-GT4-Color-Miami-Blue-Front-Three-Quarter-Wallpaper.jpg);
+}
+.Porsсhe718Boxster {
+  background-image: url(1108256.jpg);
+}
+.Porsсhe718BoxsterGTS40 {
+  background-image: url(1107976.jpg);
+}
+.Porsсhe911Carrera {
+  background-image: url(porsche-911-carrera-03.jpg);
+}
+.Porsсhe911Carrera4S {
+  background-image: url(Porsche_1B.jpg);
+}
+.Porsсhe911CarreraGTS {
+  background-image: url(78458.jpg);
+}
+.Porsсhe911Targa4 {
+  background-image: url(pors9827.jpg);
+}
+.Porsсhe911GT3 {
+  background-image: url(porsche-911-gt3-rs-wallpapers-34744-7734575.png);
+}
+.PorsсhePanamera4S {
+  background-image: url(Used-2018-Porsche-Panamera-4S.jpg);
+}
+.PorsсhePanamera4E-Hybrid {
+  background-image: url(porsche-2018-panamera-4-e-hybrid-plug-electric-range_3.jpg);
+}
+.PorsсhePanamera4SE-Hybrid {
+  background-image: url(1100764.jpg);
+}
+.PorsсhePanamera4Executive {
+  background-image: url(Panamera-971-Executive.jpg);
+}
+.PorsсhePanameraGTSSportTurismo {
+  background-image: url(394E.jpg);
+}
+.PorsсheTaycan {
+  background-image: url(porsta047.jpg);
+}
+.PorsсheTaycanSportTurismo {
+  background-image: url(61c79eafcce8ae4b1cfe3d9a0b53a472.jpg);
+}
+.PorsсheTaycan4S {
+  background-image: url(2020-Porsche-Taycan-4s-151.jpg);
+}
+.PorsсheTaycanT {
+  background-image: url(porsche-taycan-vossen-wheels.jpg);
+}
+.PorsсheTaycanGTS  {
+  background-image: url(car32647.jpg);
+}
